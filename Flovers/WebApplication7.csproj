@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\assets\manage\**" />
+    <Content Remove="wwwroot\assets\manage\**" />
+    <EmbeddedResource Remove="wwwroot\assets\manage\**" />
+    <None Remove="wwwroot\assets\manage\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\admin\scss\navs\" />
+    <Folder Include="wwwroot\admin\scss\utilities\" />
+    <Folder Include="wwwroot\admin\vendor\bootstrap\js\" />
+    <Folder Include="wwwroot\admin\vendor\bootstrap\scss\mixins\" />
+    <Folder Include="wwwroot\admin\vendor\bootstrap\scss\utilities\" />
+    <Folder Include="wwwroot\admin\vendor\bootstrap\scss\vendor\" />
+    <Folder Include="wwwroot\admin\vendor\chart.js\" />
+    <Folder Include="wwwroot\admin\vendor\datatables\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\css\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\less\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\metadata\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\scss\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\sprites\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\svgs\brands\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\svgs\regular\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\svgs\solid\" />
+    <Folder Include="wwwroot\admin\vendor\fontawesome-free\webfonts\" />
+    <Folder Include="wwwroot\admin\vendor\jquery-easing\" />
+    <Folder Include="wwwroot\admin\vendor\jquery\" />
+    <Folder Include="wwwroot\assets\" />
+    <Folder Include="wwwroot\upload\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\img\undraw_posting_photo.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile_1.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile_2.svg" />
+    <None Include="wwwroot\admin\img\undraw_profile_3.svg" />
+    <None Include="wwwroot\admin\img\undraw_rocket.svg" />
+    <None Include="wwwroot\admin\js\demo\chart-area-demo.js" />
+    <None Include="wwwroot\admin\js\sb-admin-2.js" />
+    <None Include="wwwroot\admin\js\sb-admin-2.min.js" />
+    <None Include="wwwroot\admin\scss\sb-admin-2.scss" />
+    <None Include="wwwroot\admin\scss\_buttons.scss" />
+    <None Include="wwwroot\admin\scss\_cards.scss" />
+    <None Include="wwwroot\admin\scss\_charts.scss" />
+    <None Include="wwwroot\admin\scss\_dropdowns.scss" />
+    <None Include="wwwroot\admin\scss\_error.scss" />
+    <None Include="wwwroot\admin\scss\_footer.scss" />
+    <None Include="wwwroot\admin\scss\_global.scss" />
+    <None Include="wwwroot\admin\scss\_mixins.scss" />
+    <None Include="wwwroot\admin\scss\_navs.scss" />
+    <None Include="wwwroot\admin\scss\_variables.scss" />
+    <None Include="wwwroot\admin\vendor\fontawesome-free\js\all.js" />
+    <None Include="wwwroot\admin\vendor\fontawesome-free\js\all.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.25" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.25">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+  </ItemGroup>
+
+</Project>
